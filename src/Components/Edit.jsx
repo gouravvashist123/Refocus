@@ -54,6 +54,7 @@ const Edit = () => {
 
         setProducts(copyData);
         localStorage.setItem("products", JSON.stringify(copyData));
+        toast.success("Product edited successfully !");
         navigate(-1);
         // console.log(products);
     }
